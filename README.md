@@ -1,20 +1,18 @@
 # Cybersecurity Home Lab
 
 ## Objective
-Build a safe, isolated environment to practice cybersecurity skills particularly malware analysis, incident response, and forensic investigation without risking harm to the host system or network.
+Build a safe, isolated environment to practice cybersecurity skills particularly malware analysis and forensic investigation without risking harm to the host system or network.
 
 ## Skills Learned
 - Malware behavior analysis  
-- Snapshot-based rollback and system restoration  
-- Network traffic inspection  
+- Snapshot-based rollback and system restoration    
 - Host-level forensics  
-- Threat detection and containment
 
 ### Tools that were used
 - Kali Linux (Attacker Machine)
 - Splunk (SIEM)
 - Virtual Box (Hypervisor)
-
+- Windows VM (Defender Machine)
 ## Screenshots
 
 1. Configured the Windows VM and the Linux VM to be on a secure internal network
@@ -37,6 +35,17 @@ Kali Linux VM
 
 
 
+
+
+
+
+
+4. Splunk
+
+Analyzing what the malware did.
+
+Parent Image Resume.pdf.exe spawned CMEd.exe which then ran net user, net localgroup and ipconfig.
+<img width="865" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/3474b1ca-baa3-4982-89e0-ccd8c57bb796" />
 
 
 
