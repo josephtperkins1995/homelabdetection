@@ -43,20 +43,11 @@ Kali Linux VM
 
 
 
-4. Analyzing what the malware did (Splunk)
-
+4. Generating Telemetry (Splunk)
+   
+Summary- 1. executed malware on windows machine. 
+2. from the handler on the Kali Linux VM, I typed in "shell" to establish a shell on the windows machine and typed in net user, net local group and ipconfig
 
 
 Parent Image Resume.pdf.exe spawned cmd.exe which then ran net user, net localgroup and ipconfig.
 <img width="865" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/3474b1ca-baa3-4982-89e0-ccd8c57bb796" />
-
-
-
-
-drag & drop screenshots here or use imgur and reference them using imgsrc
-
-Every screenshot should have some text explaining what the screenshot is about.
-
-Example below.
-
-*Ref 1: Network Diagram*
