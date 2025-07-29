@@ -1,7 +1,8 @@
 # Cybersecurity Home Lab
 
-## Objective
+## Objective and purpose
 Build a safe, isolated environment to practice cybersecurity skills particularly malware analysis and forensic investigation without risking harm to the host system or network.
+Created a malware on kali linux (describe what basic malware it was and what it will do) and ran it on my windows vm. I then ran some command prompts on the infected windows vm machine from the Attacker machine (kali linux) and analzyed what my malware (Resume.pdf.exe) did on the Windows VM.
 
 ## Skills Learned
 - Malware behavior analysis  
@@ -40,9 +41,9 @@ Kali Linux VM
 
 
 
-4. Splunk
+4. Analyzing what the malware did (Splunk)
 
-Analyzing what the malware did.
+
 
 Parent Image Resume.pdf.exe spawned CMEd.exe which then ran net user, net localgroup and ipconfig.
 <img width="865" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/3474b1ca-baa3-4982-89e0-ccd8c57bb796" />
