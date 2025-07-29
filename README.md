@@ -45,7 +45,7 @@ Kali Linux VM
 
 
 
-Parent Image Resume.pdf.exe spawned CMEd.exe which then ran net user, net localgroup and ipconfig.
+Parent Image Resume.pdf.exe spawned cmd.exe which then ran net user, net localgroup and ipconfig.
 <img width="865" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/3474b1ca-baa3-4982-89e0-ccd8c57bb796" />
 
 
