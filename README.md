@@ -15,7 +15,6 @@ Using Kali Linux as the attacker machine and a Windows 10 virtual machine as the
 - Kali Linux VM – attacker machine to craft and deploy malware
 - Windows 10 VM – target/test environment
 - Splunk – SIEM for telemetry and event log collection
-- Windows VM (Test Machine)
 - Command-line tools – net user, net localgroup, ipconfig.
 - Snapshot management – for safe rollback during malware testing
 ## Screenshots
