@@ -64,10 +64,12 @@ Resume.pdf.exe → cmd.exe → system commands
 1. Configured the Windows VM and the Linux VM to be on a secure internal network
 
 Windows VM
-<img width="971" height="310" alt="Screenshot 1" src="https://github.com/user-attachments/assets/3510690b-2b80-4667-a307-3a966222b6ca" />
+<img width="1390" height="389" alt="Internal Network for Windows VM" src="https://github.com/user-attachments/assets/876ef628-3fb3-4433-bc8e-e4d0c95a3edd" />
+
 
 Kali Linux VM
-<img width="970" height="364" alt="Screenshot 2" src="https://github.com/user-attachments/assets/39c00137-e94a-4d17-98ce-783fb461a120" />
+<img width="1391" height="388" alt="Internal Network for Linux VM" src="https://github.com/user-attachments/assets/75bd129f-a203-4a2a-9b82-98083ab5d8da" />
+
 
 
 
@@ -81,11 +83,6 @@ Kali Linux VM
 
 3. Set up http server so test machine can download the malware
 <img width="1069" height="811" alt="Screenshot 5" src="https://github.com/user-attachments/assets/af32e2f3-8742-4099-9e6f-c2eec7beb421" />
-
-
-
-
-
 
 
 4. Generating Telemetry (Splunk)
