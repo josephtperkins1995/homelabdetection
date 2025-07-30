@@ -1,16 +1,18 @@
 # Cybersecurity Home Lab
 
 ## Objective and purpose
-Build a safe, isolated environment to practice cybersecurity skills particularly malware analysis and forensic investigation without risking harm to the host system or network.
-Created a malware on kali linux (describe what basic malware it was and what it will do) and ran it on my windows vm. I then ran some command prompts on the infected windows vm machine from the Attacker machine (kali linux) and analzyed what my malware (Resume.pdf.exe) did on the Windows VM.
+The purpose of this home lab project was to build a safe, isolated environment to practice core cybersecurity skills — specifically malware analysis, host-based forensics, and basic adversary simulation — without putting the host system or network at risk.
+
+Using Kali Linux as the attacker machine and a Windows 10 virtual machine as the target, I created a custom piece of basic malware and executed it in a controlled internal network setup. The goal was to analyze its behavior and observe its impact using system tools and a SIEM (Splunk).
 
 ## Skills Learned
 - Malware behavior analysis  
 - Snapshot-based rollback and system restoration    
 - Host-level forensics  
 
-### Tools that were used
-- Kali Linux (Attacker Machine)
+### Tools & Technologies Used
+* VirtualBox – for managing virtual machines and internal networking
+- Kali Linux VM as attacker machine to craft and deploy malware
 - Splunk (SIEM)
 - Virtual Box (Hypervisor)
 - Windows VM (Test Machine)
