@@ -88,4 +88,5 @@ Kali Linux VM
 4. Generating Telemetry (Splunk)
 
 Parent Image Resume.pdf.exe spawned cmd.exe which then ran net user, net localgroup and ipconfig.
-<img width="865" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/3474b1ca-baa3-4982-89e0-ccd8c57bb796" />
+<img width="876" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/2dbfdecf-afaa-4ab6-ae0e-707785159d24" />
+
