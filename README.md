@@ -12,10 +12,12 @@ Using Kali Linux as the attacker machine and a Windows 10 virtual machine as the
 
 ### Tools & Technologies Used
 * VirtualBox – for managing virtual machines and internal networking
-- Kali Linux VM as attacker machine to craft and deploy malware
-- Splunk (SIEM)
-- Virtual Box (Hypervisor)
+- Kali Linux VM – attacker machine to craft and deploy malware
+- Windows 10 VM – target/test environment
+- Splunk – SIEM for telemetry and event log collection
 - Windows VM (Test Machine)
+- Command-line tools – net user, net localgroup, ipconfig.
+- Snapshot management – for safe rollback during malware testing
 ## Screenshots
 
 1. Configured the Windows VM and the Linux VM to be on a secure internal network
