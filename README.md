@@ -87,6 +87,9 @@ Kali Linux VM
 
 4. Generating Telemetry (Splunk)
 
-Parent Image Resume.pdf.exe spawned cmd.exe which then ran net user, net localgroup and ipconfig.
+Malware execution traced through process activity:
+- `Resume.pdf.exe` spawns `cmd.exe`
+- Executes `net user`, `net localgroup`, `ipconfig`
+- Logged and correlated via Splunk
 <img width="876" height="530" alt="Screenshot 6" src="https://github.com/user-attachments/assets/2dbfdecf-afaa-4ab6-ae0e-707785159d24" />
 
