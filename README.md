@@ -81,7 +81,7 @@ Windows VM
 Kali Linux VM
 <img width="1387" height="778" alt="Linux VM Snapshots" src="https://github.com/user-attachments/assets/78269724-f8f8-4299-aee6-bf263736424d" />
 
-3. Set up http server so test machine can download the malware
+3. Set up http server so test machine can download the malware.
 <img width="1069" height="811" alt="Screenshot 5" src="https://github.com/user-attachments/assets/af32e2f3-8742-4099-9e6f-c2eec7beb421" />
 
 
